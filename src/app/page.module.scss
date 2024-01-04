@@ -1,0 +1,18 @@
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    // background-color: red;
+    background-color: rgba($color: var(--primary-color-rgb), $alpha: 1.0)
+  }
+  @media (max-width: 1000px) {
+    background-color: rgba($color: var(--primary-light-color-rgb), $alpha: 1.0)
+  }
+  @media (max-width: 768px) {
+    background-color: green;
+  }
+  @media (max-width: 480px) {
+    background-color: purple;
+  }
+}
