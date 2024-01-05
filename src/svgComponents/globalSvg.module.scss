@@ -1,0 +1,7 @@
+.logo{
+    transition: .5s;
+    fill: rgb(var(--font-color-rgb));
+    &:hover{
+        fill: rgb(var(--primary-light-color-rgb));
+    }
+}
