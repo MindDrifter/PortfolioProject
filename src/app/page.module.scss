@@ -1,12 +1,13 @@
 
 .container{
-  .test2{
-    height: 1000000px;
-    width: 30%;
-  }
+  // .test2{
+  //   height: 1000000px;
+  //   width: 30%;
+  // }
   background-color: white;
   max-width: var(--max-width);
   margin: 0 auto;
+  // height: 10000px;
   .preview{
     height: 100vh;
     min-height: 500px;
@@ -40,7 +41,7 @@
     .firstName{
       margin-bottom: -20px;
       font-size:50px;
-      font-weight:bolder;
+      font-weight:bold;
     }
 
     .secondName{
