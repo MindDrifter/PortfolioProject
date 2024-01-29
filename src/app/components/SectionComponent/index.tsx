@@ -1,4 +1,3 @@
-import { ReactComponentElement } from "react";
 import styles from "./SectionComponent.module.scss";
 
 export default function SectionComponent(props: {
