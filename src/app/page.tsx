@@ -71,7 +71,7 @@ export default function Home() {
       <SectionComponent sectionName="Опыт работы">
         <ListComponent>
           <LiComponent
-            text="Разрабатывал утилиты для решения внутринних задач компании."
+            text="Разрабатывал утилиты для решения внутренних задач компании."
             descriptrion="03.2022 - 05.2022"
             imageName="vladlink-logo.png"
           >
