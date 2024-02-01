@@ -12,7 +12,6 @@
     height: 100vh;
     min-height: 500px;
     position: relative;
-    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,7 +33,7 @@
       left: 35%;
       right: 10%;
       // transform: translateX(-50%);
-      top:85%;
+      top:75%;
       display: flex;
       justify-content: space-around;
       border-top: 2px solid rgb(var(--hr-color-rgb));
@@ -53,12 +52,14 @@
     // padding-top:50vh;
     // transform: translateY(-50%);
     
-    .test_circle{
+    .photo_container{
+      position: relative;
       z-index: 1;
-      background-color: red;
       border-radius: 50%;
+      overflow: hidden;
       width: 250px;
       height: 250px;
+     
      
     }
     .firstName{
@@ -99,7 +100,7 @@
   //     text-align: center;
   //     flex-direction: column;
   //     justify-content:unset;
-  //     .test_circle{
+  //     .photo_container{
   //       width: 100px;
   //       height: 100px;
   //     }
@@ -137,14 +138,20 @@
   //   }
 
   // }
+
+  @media ((max-height: 500px) and (max-width: 1000px)) {
+    .preview{
+      height: initial;
+    }
+  }
   @media (max-width: 1000px) {
     // background-color: rgba($color: var(--primary-light-color-rgb), $alpha: 1.0);
     .preview{
-
+      // padding-top: 10%;
       text-align: center;
       flex-direction: column;
       justify-content:unset;
-      .test_circle{
+      .photo_container{
         // width: 200px;
         // height: 250px;
       }
@@ -156,12 +163,12 @@
 
       .firstName{
         margin-bottom: -20px;
-        font-size:50px;
+        font-size:40px;
         font-weight:bold;
       }
 
       .secondName{
-        font-size: 80px;
+        font-size: 60px;
       }
 
       .social{
@@ -190,7 +197,7 @@
 
     .preview{
       padding-top: 10%;
-      .test_circle{
+      .photo_container{
     
         width: 140px;
         height: 140px;
@@ -199,13 +206,21 @@
       .firstName{
         padding-top: 20px;
         margin-bottom: -20px;
-        font-size:30px;
+        font-size:25px;
         font-weight:bold;
         padding-bottom: 20px;
       }
 
       .secondName{
-        font-size: 50px;
+        font-size: 45px;
+      }
+
+      .social{
+        height: 15%;
+        margin-top: 0;
+      }
+      .contacts{
+        margin-top: 0;
       }
     }
   }
@@ -215,7 +230,7 @@
       text-align: center;
       flex-direction: column;
       justify-content:unset;
-      .test_circle{
+      .photo_container{
     
         width: 200px;
         height: 200px;
@@ -238,7 +253,7 @@
       }
 
       .social{
-        height: 30%;
+        // height: 15%;
         margin-top: 0;
 
       }

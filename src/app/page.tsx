@@ -4,13 +4,22 @@ import TgSvg from "@/svgComponents/TgSvg";
 import SectionComponent from "./components/SectionComponent";
 import ListComponent from "./components/ListComponent";
 import LiComponent from "./components/LiComponent";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.preview}>
         <div className={styles.background_decor}></div>
-        <div className={styles.test_circle}></div>
+        <div className={styles.photo_container}>
+          <Image
+          src={'/photo.jpg'}
+          alt="photoImage"
+          fill
+          objectFit="cover"
+          
+          />
+        </div>
         <div>
           <div className={styles.firstName}>Никита</div>
           <div className={styles.secondName}>Чернецов</div>
