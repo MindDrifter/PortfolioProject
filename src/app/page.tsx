@@ -5,6 +5,7 @@ import SectionComponent from "./components/SectionComponent";
 import ListComponent from "./components/ListComponent";
 import LiComponent from "./components/LiComponent";
 import Image from "next/image";
+import photo from '../../public/photo.jpg' 
 
 export default function Home() {
   return (
@@ -13,11 +14,12 @@ export default function Home() {
         <div className={styles.background_decor}></div>
         <div className={styles.photo_container}>
           <Image
-          src={'/photo.jpg'}
+          src={photo}
           alt="photoImage"
           fill
           objectFit="cover"
-          
+          placeholder="blur"
+         
           />
         </div>
         <div>

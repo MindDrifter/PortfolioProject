@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.scss";
 
-const inter = localFont({ src: '../../public/MontserratAlternates.ttf', preload:true });
+
+
+const inter = localFont({ src: "../../public/font/MontserratAlternates.ttf", preload:true});
 
 export const metadata: Metadata = {
   title: "Чернецов Никита | Веб-разработчик",

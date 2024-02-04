@@ -8,8 +8,6 @@ export default function LiComponent(props: {
   descriptrion?: string;
   text?: string;
 }) {
-  // const img = require("../../../../public/"+props.imageName);
-
   return (
     <li className={styles.li}>
       {/* <div className={styles.decoration></div> */}
@@ -18,10 +16,10 @@ export default function LiComponent(props: {
           <div className={styles.img_container}>
             <Image
             quality={100}
-              alt="listImg"
-              fill
-              objectFit="cover"
-              src={"/" + props.imageName}
+            alt="listImg"
+            fill
+            src={require('../../../../public/'+props.imageName)}
+            placeholder="blur"
             />
           </div>
         )}
